@@ -1,0 +1,22 @@
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_1  and  C_2 
+REMARK    2  A    between atoms: CA_1  and  N_5 
+REMARK    3  A    between atoms: C_2  and  OXT_4 
+ROOT
+ATOM      1  CA  GLY A   1       1.020   0.060  -0.091  1.00  0.00     0.376 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C   GLY A   1       0.527   0.793  -1.336  1.00  0.00     0.168 C 
+ATOM      3  O   GLY A   1      -0.534   0.586  -1.899  1.00  0.00    -0.649 OA
+BRANCH   2   4
+ATOM      4  OXT GLY A   1       1.419   1.742  -1.731  1.00  0.00    -0.775 OA
+ATOM      5  HXT GLY A   1       2.182   1.679  -1.105  1.00  0.00     0.167 HD
+ENDBRANCH   2   4
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      6  N   GLY A   1       2.495   0.197   0.001  1.00  0.00     0.088 N 
+ATOM      7  H1  GLY A   1       2.908  -0.376  -0.744  1.00  0.00     0.313 HD
+ATOM      8  H2  GLY A   1       2.793  -0.269   0.863  1.00  0.00     0.313 HD
+ENDBRANCH   1   6
+TORSDOF 3

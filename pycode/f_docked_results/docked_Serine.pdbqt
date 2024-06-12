@@ -1,0 +1,801 @@
+MODEL 1
+REMARK VINA RESULT:      -4.8      0.000      0.000
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -23.661  -3.338  -9.283  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -22.480  -3.926 -10.063  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -22.040  -2.985 -11.055  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -21.836  -3.510 -11.854  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -24.900  -3.283 -10.188  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -24.856  -3.283 -11.415  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -26.075  -3.282  -9.514  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -26.654  -2.543  -9.823  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -23.941  -4.137  -8.070  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -24.262  -3.503  -7.335  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -23.036  -4.460  -7.703  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -25.851   0.197 -17.053  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -26.188  -0.691 -15.917  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -25.117  -0.775 -14.959  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -24.710  -1.869 -14.355  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -25.273  -3.045 -14.563  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -23.709  -1.763 -13.531  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -25.932  -3.138 -15.103  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -24.964  -3.724 -14.143  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -23.360  -0.993 -13.422  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -23.416  -2.448 -13.126  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -24.745  -0.051 -14.711  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.426  -5.462 -13.039  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.769  -5.303 -13.712  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -22.409  -4.246 -13.545  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.194  -6.251 -14.400  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.6      3.425      4.613
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -24.749  -2.101 -14.180  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -25.597  -3.301 -14.616  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -24.741  -4.420 -14.895  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -24.326  -4.660 -14.043  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -23.259  -2.451 -14.306  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -22.585  -2.926 -13.397  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -22.744  -2.235 -15.540  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -22.094  -1.491 -15.522  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -25.070  -0.907 -14.992  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -24.345  -0.799 -15.706  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -24.918  -0.083 -14.395  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -28.105   1.070 -16.582  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -28.849  -0.004 -17.279  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -28.312  -1.309 -16.996  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -28.950  -2.449 -17.134  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -30.202  -2.515 -17.549  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -28.299  -3.540 -16.851  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -30.649  -1.811 -17.743  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -30.566  -3.288 -17.622  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -27.489  -3.467 -16.592  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -28.676  -4.295 -16.931  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -27.534  -1.355 -16.655  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -19.810  -5.970 -15.198  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.256  -5.579 -15.398  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -21.556  -4.839 -16.354  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.095  -6.004 -14.579  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.5      2.451      3.183
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -22.811  -2.747 -12.667  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -23.104  -2.486 -14.148  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -23.936  -3.536 -14.667  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -23.477  -4.373 -14.456  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -23.940  -3.592 -12.059  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -25.020  -3.136 -11.695  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -23.666  -4.917 -11.999  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -24.147  -5.339 -11.246  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -21.508  -3.428 -12.500  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -21.634  -4.419 -12.718  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -21.302  -3.447 -11.493  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -28.222   1.157 -16.906  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -28.621  -0.266 -16.814  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -27.653  -1.055 -16.099  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -27.523  -2.361 -16.171  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -28.306  -3.111 -16.924  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -26.575  -2.909 -15.468  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -28.935  -2.771 -17.397  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -28.172  -3.957 -16.934  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -26.080  -2.399 -14.996  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -26.458  -3.749 -15.492  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -27.155  -0.661 -15.534  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -19.815  -5.919 -15.182  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.257  -5.507 -15.359  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -21.582  -4.860 -16.374  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.069  -5.819 -14.466  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -4.4      0.756      1.898
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -23.556  -4.207  -9.311  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -24.613  -3.281  -9.924  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -24.811  -3.622 -11.305  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -25.738  -3.389 -11.510  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -22.166  -3.820  -9.837  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -21.112  -4.219  -9.351  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -22.193  -3.025 -10.933  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -22.232  -3.569 -11.758  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -23.589  -4.138  -7.834  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -23.248  -5.028  -7.464  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -24.578  -4.145  -7.551  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -25.860   0.195 -17.013  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -26.218  -0.663 -15.861  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -25.103  -0.876 -14.975  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -24.862  -1.973 -14.294  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -25.655  -3.028 -14.343  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -23.791  -1.998 -13.555  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -26.364  -3.034 -14.824  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -25.446  -3.717 -13.879  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -23.293  -1.305 -13.549  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -23.600  -2.690 -13.104  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -24.580  -0.222 -14.828  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.446  -5.549 -12.970  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.687  -5.139 -13.728  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -22.722  -4.863 -13.090  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -21.629  -5.111 -14.973  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -4.2      2.199      2.783
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -23.895  -4.081 -11.122  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -24.303  -3.598  -9.725  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -25.696  -3.248  -9.723  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -26.184  -4.086  -9.844  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -24.276  -3.020 -12.165  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -25.404  -2.888 -12.630  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -23.260  -2.191 -12.504  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -23.417  -1.283 -12.149  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -22.445  -4.365 -11.178  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -22.262  -4.938 -12.005  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -22.232  -5.014 -10.408  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -28.227   1.162 -16.932  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -28.614  -0.253 -16.733  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -27.610  -0.995 -16.017  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -27.424  -2.294 -16.080  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -28.176  -3.083 -16.825  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -26.450  -2.796 -15.378  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -28.821  -2.774 -17.297  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -28.006  -3.923 -16.829  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -25.975  -2.261 -14.912  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -26.296  -3.629 -15.396  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -27.127  -0.575 -15.457  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -19.813  -5.932 -15.186  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.157  -5.251 -15.311  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -21.807  -5.002 -14.278  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -21.571  -4.980 -16.455  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -4.2      7.092      8.749
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -35.838  -0.433 -15.059  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -35.441   1.046 -15.115  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -36.371   1.764 -15.942  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -37.229   1.305 -15.842  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -35.587  -1.086 -16.426  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -34.697  -1.902 -16.645  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -36.474  -0.721 -17.382  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -37.377  -0.609 -16.997  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -35.083  -1.141 -14.001  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -34.397  -1.752 -14.451  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -35.728  -1.814 -13.566  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -25.835   0.204 -17.165  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -24.758   0.399 -16.168  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -24.923  -0.451 -15.018  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -24.116  -1.425 -14.660  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -23.039  -1.744 -15.353  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -24.410  -2.079 -13.574  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -22.825  -1.325 -16.070  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -22.548  -2.387 -15.070  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -25.108  -1.846 -13.143  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -23.911  -2.712 -13.309  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -25.631  -0.363 -14.555  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.439  -5.517 -12.994  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.715  -5.192 -13.733  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -22.350  -4.165 -13.423  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.094  -5.981 -14.622  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -4.1      4.455      6.131
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -28.954  -6.942 -17.096  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -30.194  -6.084 -16.820  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -30.090  -5.493 -15.515  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -29.173  -5.163 -15.441  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -27.964  -6.807 -15.930  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -27.905  -7.588 -14.985  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -27.109  -5.764 -16.051  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -26.847  -5.635 -16.995  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -29.329  -8.359 -17.295  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -30.246  -8.388 -17.747  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -29.527  -8.755 -16.367  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -28.231   1.167 -16.954  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -28.621  -0.244 -16.729  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -27.605  -0.982 -16.026  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -27.424  -2.283 -16.080  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -28.195  -3.076 -16.802  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -26.438  -2.781 -15.393  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -28.848  -2.770 -17.264  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -28.028  -3.917 -16.801  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -25.953  -2.244 -14.942  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -26.288  -3.616 -15.406  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -27.109  -0.559 -15.481  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.450  -5.570 -12.955  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.699  -5.163 -13.701  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -22.689  -4.769 -13.055  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -21.693  -5.254 -14.945  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -4.0      6.883      8.800
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -36.588  -0.023 -15.556  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -36.036  -0.949 -16.645  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -35.183  -1.940 -16.049  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -34.629  -2.289 -16.775  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -35.952  -0.381 -14.205  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -36.477  -1.111 -13.370  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -34.717   0.144 -14.021  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -34.765   1.127 -13.931  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -36.331   1.395 -15.890  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -36.451   1.513 -16.899  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -35.323   1.558 -15.767  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -25.835   0.203 -17.160  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -24.748   0.410 -16.176  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -24.896  -0.434 -15.020  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -24.081  -1.403 -14.667  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -23.011  -1.721 -15.372  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -24.358  -2.053 -13.574  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -22.808  -1.306 -16.093  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -22.514  -2.361 -15.091  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -25.052  -1.821 -13.135  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -23.854  -2.682 -13.312  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -25.598  -0.346 -14.548  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.442  -5.530 -12.984  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.739  -5.240 -13.702  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -22.193  -6.086 -14.496  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.298  -4.147 -13.482  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -4.0      4.917      6.847
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  CA_2 
+REMARK    2  A    between atoms: C_1  and  O_7 
+REMARK    3  A    between atoms: CA_2  and  C_3 
+REMARK    4  A    between atoms: CA_2  and  N_6 
+REMARK    5  A    between atoms: C_3  and  O_5 
+ROOT
+HETATM    1  CA  UNL     1     -30.064  -6.314 -17.969  1.00  0.00     0.337 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1     -28.742  -5.603 -18.277  1.00  0.00     0.210 C 
+BRANCH   2   3
+HETATM    3  O   UNL     1     -27.772  -6.562 -18.730  1.00  0.00    -0.398 OA
+HETATM    4  H   UNL     1     -26.898  -6.147 -18.594  1.00  0.00     0.209 HD
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   UNL     1     -29.883  -7.831 -18.130  1.00  0.00     0.176 C 
+HETATM    6  O   UNL     1     -30.205  -8.458 -19.135  1.00  0.00    -0.648 OA
+BRANCH   5   7
+HETATM    7  O   UNL     1     -29.282  -8.430 -17.075  1.00  0.00    -0.775 OA
+HETATM    8  H   UNL     1     -28.403  -8.798 -17.336  1.00  0.00     0.167 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+HETATM    9  N   UNL     1     -30.528  -5.991 -16.602  1.00  0.00     0.095 N 
+HETATM   10  H1  UNL     1     -30.816  -6.861 -16.147  1.00  0.00     0.314 HD
+HETATM   11  H2  UNL     1     -31.419  -5.486 -16.695  1.00  0.00     0.314 HD
+ENDBRANCH   1   9
+TORSDOF 5
+BEGIN_RES ARG D 557
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  CG  
+REMARK    3  A    between atoms: CG   and  CD  
+REMARK    4  A    between atoms: CD   and  NE  
+REMARK       I    between atoms: NE   and  CZ  
+REMARK       I    between atoms: CZ   and  NH1 
+REMARK       I    between atoms: CZ   and  NH2 
+ROOT
+ATOM      1  CA  ARG D 557     -26.217   2.705 -17.014  1.00 35.49     0.159 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  ARG D 557     -26.789   1.319 -17.183  1.00 35.49     0.034 C 
+BRANCH   2   3
+ATOM      3  CG  ARG D 557     -25.840   0.201 -17.123  1.00 35.49     0.027 C 
+BRANCH   3   4
+ATOM      4  CD  ARG D 557     -24.764   0.426 -16.131  1.00 35.49     0.116 C 
+BRANCH   4   5
+ATOM      5  NE  ARG D 557     -24.875  -0.456 -15.000  1.00 35.49    -0.212 N 
+ATOM      6  CZ  ARG D 557     -24.036  -1.419 -14.691  1.00 35.49     0.666 C 
+ATOM      7  NH1 ARG D 557     -22.973  -1.695 -15.423  1.00 35.49    -0.235 N 
+ATOM      8  NH2 ARG D 557     -24.283  -2.108 -13.615  1.00 35.49    -0.235 N 
+ATOM      9  HH  ARG D 557     -22.790  -1.253 -16.134  1.00 35.49     0.174 HD
+ATOM     10  HH  ARG D 557     -22.459  -2.333 -15.171  1.00 35.49     0.174 HD
+ATOM     11  HH  ARG D 557     -24.973  -1.902 -13.157  1.00 35.49     0.174 HD
+ATOM     12  HH  ARG D 557     -23.762  -2.734 -13.381  1.00 35.49     0.174 HD
+ATOM     13  HE  ARG D 557     -25.571  -0.396 -14.514  1.00 35.49     0.178 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+END_RES ARG D 557
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    5  A    between atoms: CA   and  CB  
+REMARK    6  A    between atoms: CB   and  CG  
+REMARK    7  A    between atoms: CG   and  CD  
+ROOT
+ATOM     14  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH  14  15
+ATOM     15  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH  15  16
+ATOM     16  CG  GLU D 570     -20.447  -5.557 -12.964  1.00 32.92     0.100 C 
+BRANCH  16  17
+ATOM     17  CD  GLU D 570     -21.641  -5.059 -13.745  1.00 32.92     0.185 C 
+ATOM     18  OE1 GLU D 570     -21.586  -5.041 -14.989  1.00 32.92    -0.647 OA
+ATOM     19  OE2 GLU D 570     -22.637  -4.668 -13.104  1.00 32.92    -0.647 OA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+END_RES GLU D 570
+ENDMDL

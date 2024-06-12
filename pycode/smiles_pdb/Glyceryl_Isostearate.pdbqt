@@ -1,0 +1,95 @@
+REMARK  21 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_4 
+REMARK    2  A    between atoms: C_4  and  C_5 
+REMARK    3  A    between atoms: C_5  and  C_6 
+REMARK    4  A    between atoms: C_6  and  C_7 
+REMARK    5  A    between atoms: C_7  and  C_8 
+REMARK    6  A    between atoms: C_8  and  C_9 
+REMARK    7  A    between atoms: C_9  and  C_10 
+REMARK    8  A    between atoms: C_10  and  C_11 
+REMARK    9  A    between atoms: C_11  and  C_12 
+REMARK   10  A    between atoms: C_12  and  C_13 
+REMARK   11  A    between atoms: C_13  and  C_14 
+REMARK   12  A    between atoms: C_14  and  C_15 
+REMARK   13  A    between atoms: C_15  and  C_16 
+REMARK   14  A    between atoms: C_16  and  C_17 
+REMARK   15  A    between atoms: C_17  and  C_18 
+REMARK   16  A    between atoms: C_18  and  O_20 
+REMARK   17  A    between atoms: O_20  and  C_21 
+REMARK   18  A    between atoms: C_21  and  C_22 
+REMARK   19  A    between atoms: C_22  and  C_23 
+REMARK   20  A    between atoms: C_22  and  O_25 
+REMARK   21  A    between atoms: C_23  and  O_24 
+ROOT
+HETATM    1  C   UNL     1      13.217  -5.330  -6.632  1.00  0.00     0.000 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C   UNL     1      12.695  -4.431  -5.523  1.00  0.00     0.000 C 
+BRANCH   2   3
+HETATM    3  C   UNL     1      11.172  -4.428  -5.522  1.00  0.00     0.000 C 
+BRANCH   3   4
+HETATM    4  C   UNL     1      10.646  -3.531  -4.413  1.00  0.00     0.000 C 
+BRANCH   4   5
+HETATM    5  C   UNL     1       9.125  -3.531  -4.412  1.00  0.00     0.000 C 
+BRANCH   5   6
+HETATM    6  C   UNL     1       8.600  -2.632  -3.304  1.00  0.00     0.000 C 
+BRANCH   6   7
+HETATM    7  C   UNL     1       7.080  -2.633  -3.301  1.00  0.00     0.000 C 
+BRANCH   7   8
+HETATM    8  C   UNL     1       6.557  -1.732  -2.195  1.00  0.00     0.000 C 
+BRANCH   8   9
+HETATM    9  C   UNL     1       5.035  -1.725  -2.183  1.00  0.00     0.000 C 
+BRANCH   9  10
+HETATM   10  C   UNL     1       4.535  -0.818  -1.068  1.00  0.00     0.000 C 
+BRANCH  10  11
+HETATM   11  C   UNL     1       3.010  -0.787  -1.021  1.00  0.00     0.004 C 
+BRANCH  11  12
+HETATM   12  C   UNL     1       2.470   0.123   0.094  1.00  0.00    -0.023 C 
+HETATM   13  C   UNL     1       0.942   0.104   0.075  1.00  0.00     0.009 C 
+HETATM   14  C   UNL     1       2.978  -0.288   1.477  1.00  0.00     0.009 C 
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   5   6
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  15
+HETATM   15  C   UNL     1      14.741  -5.347  -6.650  1.00  0.00     0.000 C 
+BRANCH  15  16
+HETATM   16  C   UNL     1      15.228  -6.252  -7.772  1.00  0.00     0.010 C 
+BRANCH  16  17
+HETATM   17  C   UNL     1      16.748  -6.302  -7.843  1.00  0.00     0.111 C 
+BRANCH  17  18
+HETATM   18  C   UNL     1      17.172  -7.215  -8.949  1.00  0.00     0.258 C 
+HETATM   19  O   UNL     1      16.437  -7.858  -9.684  1.00  0.00    -0.265 OA
+BRANCH  18  20
+HETATM   20  O   UNL     1      18.542  -7.318  -8.945  1.00  0.00    -0.319 OA
+BRANCH  20  21
+HETATM   21  C   UNL     1      19.001  -8.561  -9.486  1.00  0.00     0.212 C 
+BRANCH  21  22
+HETATM   22  C   UNL     1      18.947  -8.644 -11.006  1.00  0.00     0.166 C 
+BRANCH  22  23
+HETATM   23  C   UNL     1      19.791  -7.572 -11.712  1.00  0.00     0.198 C 
+BRANCH  23  24
+HETATM   24  O   UNL     1      21.164  -7.701 -11.358  1.00  0.00    -0.398 OA
+HETATM   25  H   UNL     1      21.276  -7.450 -10.428  1.00  0.00     0.209 HD
+ENDBRANCH  23  24
+ENDBRANCH  22  23
+BRANCH  22  26
+HETATM   26  O   UNL     1      19.356  -9.955 -11.394  1.00  0.00    -0.391 OA
+HETATM   27  H   UNL     1      20.330 -10.001 -11.321  1.00  0.00     0.210 HD
+ENDBRANCH  22  26
+ENDBRANCH  21  22
+ENDBRANCH  20  21
+ENDBRANCH  18  20
+ENDBRANCH  17  18
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 21
