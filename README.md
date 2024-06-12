@@ -11,5 +11,3 @@ Python3 translation of AutoDockTools
 *Windows*
 
 `python.exe -m pip install git+https://github.com/kangjunseo/AutoDockTools_py3`
-
-# This version is under test.
