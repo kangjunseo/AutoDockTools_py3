@@ -26,6 +26,8 @@ conda activate MD
 
 ## Usage
 
+- One receptor + ligand_name  
+
 ```shell
 
 python3 pycode/dock.py -r {path/receptor.pdbqt} -l {ligand_name}
