@@ -2,15 +2,27 @@
 Python3 translation of AutoDockTools
 +one click docking
 
-**Install**
+## Prerequisites(IMPORTANT)
+major dependency of this repository is:  
+- python=3.12.3=h996f2a0_1
+- pandas=2.2.1=py312h526ad5a_0
+- babel=2.11.0=py312h06a4308_0
+- pip:
+  - rdkit==2023.9.6
+  - matplotlib==3.9.0
+ 
+OR  
+See 'environment.yml' for the required packeges.
 
-*Linux*
+## Installation
 
-`python -m pip install git+https://github.com/kangjunseo/AutoDockTools_py3`
+```sh
+git clone https://github.com/kangjunseo/AutoDockTools_py3.git
+cd AutoDockTools_py3
+conda env create -f environment.yml
+conda activate MD
+```
 
-*Windows*
-
-`python.exe -m pip install git+https://github.com/kangjunseo/AutoDockTools_py3`
 
 ## Usage
 
@@ -20,12 +32,7 @@ python3 pycode/dock.py -r {path/receptor.pdbqt} -l {ligand_name}
 
 ```
 
-## Prerequisites
 
-python3  
-rdkit  
-pandas  
-matplotlib  
 
 ## Known Errors (not critical)
 
