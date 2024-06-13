@@ -148,7 +148,7 @@ def main(receptor, name):
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
     else:
-        os.makedirs(output_path, exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
     
     name2pdb(name, output_dir) # convert name to SMILES, and SMILES to 3D pdb
     
