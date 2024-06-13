@@ -26,6 +26,7 @@ import sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
 grandparent_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
 sys.path.append(grandparent_dir)
+
 from MolKit import Read
 from MolKit.protein import ProteinSet, ResidueSet, AtomSet
 from MolKit.molecule import BondSet

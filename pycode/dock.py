@@ -74,11 +74,11 @@ def is_organic(smiles):
         return False
     return False
 
-def create_pdb(name, smiles):
+def create_pdb(name, smiles, output_dir):
     
     def sanitize_filename(filename): return filename.replace(' ', '_')
 
-    output_file = os.path.join(os.getcwd(), f"{name}.pdb")
+    output_file = os.path.join(output_dir, f"{name}.pdb")
     output_file = sanitize_filename(output_file)
 
     command = f'obabel -:"{smiles}" -O {output_file} --gen3d'
@@ -90,18 +90,18 @@ def create_pdb(name, smiles):
         print(f"Error converting {name}: {e}")
 
 
-def name2pdb(name):
+def name2pdb(name, output_dir):
     res = get_smiles(name)
     res = salt_remove(res)
     if is_organic(res): 
-        create_pdb(name, res)
+        create_pdb(name, res, output_dir)
     else:
         print("Not organic compound")
 
 ## prepare pdbqt
 #"python3 /home/kjs/Downloads/AutoDockTools_py3/AutoDockTools/Utilities24/prepare_ligand4.py -h"
 
-def prepare_pdbqt(pdb_file, output_file = current_dir):
+def prepare_pdbqt(pdb_file, output_file):
     output_file = os.path.join(output_file, os.path.basename(pdb_file).replace('.pdb', '.pdbqt'))
     try:
         prepare_ligand_path = "../AutoDockTools/Utilities24/prepare_ligand4.py"
@@ -143,31 +143,41 @@ def dock_ligand(receptor, ligand, output):
         print(f"Error docking {ligand} to {receptor}: {e.stderr.decode('utf-8')}")
 
 
-def main(receptor, name, output):
+def main(receptor, name):
+    output_dir = os.path.join(current_dir, f'dock_result_{name}')
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
+    else:
+        os.makedirs(output_path, exist_ok=True)
     
-    name2pdb(name) # convert name to SMILES, and SMILES to 3D pdb
+    name2pdb(name, output_dir) # convert name to SMILES, and SMILES to 3D pdb
     
-    prepare_pdbqt(os.path.join(current_dir, f'{name}.pdb')) # convert pdb to pdbqt
+    prepare_pdbqt(os.path.join(output_dir, f'{name}.pdb'), output_dir) # convert pdb to pdbqt
     
-    ligand = f'{name}.pdbqt'
-    #output = f'r_docked_{name}.pdbqt'
-    dock_ligand(receptor, ligand, output)
+    dock_ligand(receptor, os.path.join(output_dir, f'{name}.pdbqt'), os.path.join(output_dir, f'r_docked_{name}.pdbqt'))
 
 if __name__ == '__main__':
     import argparse
     import sys
-
-    parser = argparse.ArgumentParser(description="(ex. python3 ./dock.py -r receptor.pdbqt -l ligand_name -o r_docked_RTX.pdbqt)")
+    start_time = time.time()
+    parser = argparse.ArgumentParser(description="(ex. python3 ./dock.py -r receptor.pdbqt -l ligand_name)")
     parser.add_argument("-r", "--receptor", type=str, required=True, help="receptor pdbqt file")
-    parser.add_argument("-l", "--name", type=str, required=True, help="name of ligand(will be searched at pubchem)")
-    parser.add_argument("-o", "--output", type=str, required=True, help="output path, must be .pdbqt")
+    parser.add_argument("-l", "--ligand_name", type=str, required=True, help="name of ligand(will be searched at pubchem)")
+    #parser.add_argument("-o", "--output", type=str, required=True, help="output path, must be .pdbqt")
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
         sys.exit(1)
     
     args = parser.parse_args()
-    main(args.receptor, args.name, args.output)
+    main(args.receptor, args.ligand_name)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    log_path = os.path.join(current_dir, f'dock_result_{args.ligand_name}', f'r_docked_{args.ligand_name}.log')
+    try:
+        subprocess.call(['cat', log_path])
+        print(f"Execution time: {elapsed_time:.3f} seconds")
+    except FileNotFoundError:
+        print(f"Log not Found: {log_path}, Docking is not completely done.")
     
-    
-## Flexible Docking

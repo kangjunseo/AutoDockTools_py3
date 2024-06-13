@@ -14,12 +14,16 @@
 # ##################################################################################################
 
 import os
+import sys
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+grandparent_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
+sys.path.append(grandparent_dir)
 
 from MolKit import Read
 import MolKit.molecule
 import MolKit.protein
 from AutoDockTools.MoleculePreparation import AD4ReceptorPreparation
-import sys
 import getopt
 
 
