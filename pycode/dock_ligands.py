@@ -3,8 +3,13 @@ import subprocess
 import time
 
 import utils
+import dock
 
 current_dir = os.getcwd()
+
+#WorkFlow : SMILES -> PDB -> PDBQT -> Docking
+#INPUT : Receptor, config(if needed), ligand_folder
+#OUTPUT : folder
 
 ## prepare pdbqt
 def prepare_pdbqt(pdb_file, output_file):
