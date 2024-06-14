@@ -94,6 +94,7 @@ def create_pdb(name, smiles, output_dir):
 
 def name2pdb(name, output_dir):
     res = get_smiles(name)
+    if res == None: return 0
     res = salt_remove(res)
     if is_organic(res): 
         create_pdb(name, res, output_dir)
