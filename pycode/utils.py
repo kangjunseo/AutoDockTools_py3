@@ -2,6 +2,7 @@ import os
 import subprocess
 import requests
 import time
+#from timeout_decorator import timeout, TimeoutError
 from urllib.parse import quote
 
 from rdkit import Chem
@@ -74,6 +75,7 @@ def is_organic(smiles):
         return False
     return False
 
+
 def create_pdb(name, smiles, output_dir):
     
     def sanitize_filename(filename): return filename.replace(' ', '_')
@@ -97,3 +99,11 @@ def name2pdb(name, output_dir):
         create_pdb(name, res, output_dir)
     else:
         print("Not organic compound")
+
+def smiles2pdb(name, smiles, output_dir):
+    res = salt_remove(smiles)
+    if is_organic(res): 
+        create_pdb(name, res, output_dir)
+    else:
+        print("Not organic compound")
+
