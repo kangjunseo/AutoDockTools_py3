@@ -3,6 +3,11 @@ Python3 translation of AutoDockTools
 +one click docking
 
 ## Prerequisites(IMPORTANT)
+
+**you must have excutable vina file**
+download at https://vina.scripps.edu/downloads/  
+or https://github.com/ccsb-scripps/AutoDock-Vina
+
 major dependency of this repository is:  
 - python=3.12.3=h996f2a0_1
 - pandas=2.2.1=py312h526ad5a_0
