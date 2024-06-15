@@ -75,11 +75,9 @@ def is_organic(smiles):
         return False
     return False
 
+def sanitize_filename(filename): return filename.replace(' ', '_')
 
 def create_pdb(name, smiles, output_dir):
-    
-    def sanitize_filename(filename): return filename.replace(' ', '_')
-
     output_file = os.path.join(output_dir, f"{name}.pdb")
     output_file = sanitize_filename(output_file)
 
@@ -94,7 +92,7 @@ def create_pdb(name, smiles, output_dir):
 
 def name2pdb(name, output_dir):
     res = get_smiles(name)
-    if res == None: return 0
+    if res == None: return 1
     res = salt_remove(res)
     if is_organic(res): 
         create_pdb(name, res, output_dir)

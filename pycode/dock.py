@@ -55,13 +55,18 @@ def main(receptor, name, output=None):
     if output is None: output = current_dir
     output_dir = os.path.join(current_dir, output, f'dock_result_{name}')
     os.makedirs(output_dir, exist_ok=True)
-    
-    utils.name2pdb(name, output_dir) # convert name to SMILES, and SMILES to 3D pdb
-    
-    prepare_pdbqt(os.path.join(output_dir, f'{name}.pdb'), output_dir) # convert pdb to pdbqt
-    
-    dock_ligand(receptor, os.path.join(output_dir, f'{name}.pdbqt'), os.path.join(output_dir, f'r_docked_{name}.pdbqt'))
+    try:
+        sig = utils.name2pdb(name, output_dir)  # convert name to SMILES, and SMILES to 3D pdb
+        if sig == 1:
+            raise ValueError(f"Converting {name} pdb file failed, quitting dock")
+        
+        prepare_pdbqt(os.path.join(output_dir, f'{name}.pdb'), output_dir)  # convert pdb to pdbqt
+        dock_ligand(receptor, os.path.join(output_dir, f'{name}.pdbqt'), os.path.join(output_dir, f'r_docked_{name}.pdbqt'))
 
+    except Exception as e:
+        print(f"Error: {e}")
+        exit(1)
+        
 
 if __name__ == '__main__':
     import argparse
@@ -77,6 +82,7 @@ if __name__ == '__main__':
         sys.exit(1)
     
     args = parser.parse_args()
+    args.ligand_name = utils.sanitize_filename(args.ligand_name)
     main(args.receptor, args.ligand_name, args.output)
 
     end_time = time.time()
