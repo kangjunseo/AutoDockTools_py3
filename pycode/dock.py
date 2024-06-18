@@ -73,7 +73,8 @@ def dock_ligand_flex(r_receptor, f_receptor, ligand, output):
         
 
 
-def main(receptor, name, output=''):
+def main(receptor, name, output=None):
+    if output is None: output = ''
     output_dir = os.path.join(current_dir, output, f'dock_result_{name}')
     os.makedirs(output_dir, exist_ok=True)
     try:
@@ -96,7 +97,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="(ex. python3 ./dock.py -r receptor.pdbqt -l ligand_name)")
     parser.add_argument("-r", "--receptor", type=str, required=True, help="receptor pdbqt file")
     parser.add_argument("-l", "--ligand_name", type=str, required=True, help="name of ligand(will be searched at pubchem)")
-    parser.add_argument("-o", "--output", type=str, required=False, help="output directory(please use relative path)")
+    parser.add_argument("-o", "--output", type=str, required=False, help="output directory")
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
