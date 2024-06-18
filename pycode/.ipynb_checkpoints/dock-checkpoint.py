@@ -51,8 +51,29 @@ def dock_ligand(receptor, ligand, output):
         print(f"Error docking {ligand} to {receptor}: {e.stderr.decode('utf-8')}")
 
 
-def main(receptor, name, output=None):
-    if output is None: output = current_dir
+## Flex Docking
+def dock_ligand_flex(r_receptor, f_receptor, ligand, output):
+    vina_executable = "/home/kjs/Downloads/autodock_vina_1_1_2_linux_x86/bin/vina"  # AutoDock Vina 실행 파일 경로 설정
+    try:
+        command = [
+            vina_executable,
+            '--receptor', r_receptor,
+            '--flex', f_receptor,
+            '--ligand', ligand,
+            '--out', output,
+            '--log', output.replace('.pdbqt', '.log'),
+            '--center_x', '-23.075', '--center_y', '-2.183', '--center_z', '-7.899',  # 이 값을 조정하여 도킹 박스의 중심을 설정하십시오.
+            '--size_x', '30', '--size_y', '30', '--size_z', '30'  # 이 값을 조정하여 도킹 박스의 크기를 설정하십시오.
+        ]
+        result = subprocess.run(command, check=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+        print(f"Docked {ligand}, output saved to {output}")
+       
+    except subprocess.CalledProcessError as e:
+        print(f"Error docking {ligand} to {f_receptor}: {e.stderr.decode('utf-8')}")
+        
+
+
+def main(receptor, name, output=''):
     output_dir = os.path.join(current_dir, output, f'dock_result_{name}')
     os.makedirs(output_dir, exist_ok=True)
     try:
@@ -75,7 +96,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="(ex. python3 ./dock.py -r receptor.pdbqt -l ligand_name)")
     parser.add_argument("-r", "--receptor", type=str, required=True, help="receptor pdbqt file")
     parser.add_argument("-l", "--ligand_name", type=str, required=True, help="name of ligand(will be searched at pubchem)")
-    parser.add_argument("-o", "--output", type=str, required=False, help="output directory")
+    parser.add_argument("-o", "--output", type=str, required=False, help="output directory(please use relative path)")
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)

@@ -7,7 +7,7 @@ from urllib.parse import quote
 
 from rdkit import Chem
 from rdkit.Chem import SaltRemover
-
+import pandas as pd
 
 current_dir = os.getcwd()
 # 사용자 에이전트 헤더 추가
@@ -106,3 +106,39 @@ def smiles2pdb(name, smiles, output_dir):
     else:
         print("Not organic compound")
 
+
+def parse_log_file(log_file):
+    """Parse the log file to extract the compound name and affinity value."""
+    with open(log_file, 'r') as file:
+        lines = file.readlines()
+    
+    compound_name = os.path.basename(log_file).replace('r_docked_', '').replace('.log', '')
+    affinity = None
+    
+    for line in lines:
+        if line.strip().startswith('1'):
+            parts = line.split()
+            if len(parts) > 1:
+                try:
+                    affinity = float(parts[1])
+                except ValueError:
+                    continue
+            break
+    
+    return compound_name, affinity
+
+
+def process_log_files(log_dir):
+    """Process all log files in the specified directory and return a DataFrame."""
+    data = []
+
+    for root, dirs, files in os.walk(log_dir):
+        for log_file in files:
+            if log_file.endswith('.log'):
+                log_path = os.path.join(root, log_file)
+                compound_name, affinity = parse_log_file(log_path)
+                if affinity is not None:
+                    data.append((compound_name, affinity))
+    
+    df = pd.DataFrame(data, columns=['INCI', 'Affinity'])
+    return df

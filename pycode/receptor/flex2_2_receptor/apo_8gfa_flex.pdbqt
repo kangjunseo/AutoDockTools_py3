@@ -1,0 +1,38 @@
+BEGIN_RES THR D 550
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA   and  CB  
+REMARK    2  A    between atoms: CB   and  OG1 
+ROOT
+ATOM      1  CA  THR D 550     -23.815  -1.422  -4.360  1.00 30.31     0.186 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CB  THR D 550     -23.034  -2.690  -4.115  1.00 30.31     0.140 C 
+ATOM      3  CG2 THR D 550     -22.058  -2.476  -3.085  1.00 30.31     0.034 C 
+BRANCH   2   4
+ATOM      4  OG1 THR D 550     -23.927  -3.715  -3.701  1.00 30.31    -0.382 OA
+ATOM      5  HG1 THR D 550     -23.676  -4.441  -4.014  1.00 30.31     0.210 HD
+ENDBRANCH   2   4
+ENDBRANCH   1   2
+END_RES THR D 550
+BEGIN_RES GLU D 570
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    3  A    between atoms: CA   and  CB  
+REMARK    4  A    between atoms: CB   and  CG  
+REMARK    5  A    between atoms: CG   and  CD  
+ROOT
+ATOM      6  CA  GLU D 570     -18.033  -6.348 -13.375  1.00 32.92     0.160 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  CB  GLU D 570     -19.500  -6.345 -13.794  1.00 32.92     0.043 C 
+BRANCH   7   8
+ATOM      8  CG  GLU D 570     -19.797  -6.240 -15.246  1.00 32.92     0.100 C 
+BRANCH   8   9
+ATOM      9  CD  GLU D 570     -21.277  -6.166 -15.541  1.00 32.92     0.185 C 
+ATOM     10  OE1 GLU D 570     -22.082  -6.122 -14.591  1.00 32.92    -0.647 OA
+ATOM     11  OE2 GLU D 570     -21.636  -6.169 -16.735  1.00 32.92    -0.647 OA
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+END_RES GLU D 570
