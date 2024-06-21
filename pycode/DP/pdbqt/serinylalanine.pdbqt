@@ -1,0 +1,41 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_2  and  C_4 
+REMARK    2  A    between atoms: C_3  and  C_9 
+REMARK    3  A    between atoms: C_4  and  C_11 
+REMARK    4  A    between atoms: N_5  and  C_11 
+REMARK    5  A    between atoms: C_9  and  N_12 
+REMARK    6  A    between atoms: C_11  and  C_13 
+REMARK       I    between atoms: N_12  and  C_13 
+ROOT
+HETATM    1  H           1      -1.550  -0.167   0.489  0.00  0.00     0.163 HD
+HETATM    2  O           1       1.239   0.550  -0.755  0.00  0.00    -0.271 OA
+HETATM    3  N           1      -0.892   0.217  -0.177  0.00  0.00    -0.345 N 
+HETATM    4  C           1       0.454   0.092   0.040  0.00  0.00     0.251 C 
+ENDROOT
+BRANCH   4   5
+HETATM    5  C           1       0.956  -0.619   1.273  0.00  0.00     0.297 C 
+BRANCH   5   6
+HETATM    6  C           1       2.479  -0.620   1.274  0.00  0.00     0.206 C 
+BRANCH   6   7
+HETATM    7  O           1       2.948  -1.282   0.130  0.00  0.00    -0.398 OA
+HETATM    8  H           1       3.889  -1.261   0.168  0.00  0.00     0.209 HD
+ENDBRANCH   6   7
+ENDBRANCH   5   6
+BRANCH   5   9
+HETATM    9  N           1       0.456  -2.033   1.272  0.00  0.00    -0.064 N 
+HETATM   10  H           1       0.803  -2.526   2.126  0.00  0.00     0.275 HD
+HETATM   11  H           1      -0.589  -2.033   1.272  0.00  0.00     0.275 HD
+HETATM   12  H           1       0.805  -2.526   0.419  0.00  0.00     0.275 HD
+ENDBRANCH   5   9
+ENDBRANCH   4   5
+BRANCH   3  13
+HETATM   13  C           1      -1.375   0.900  -1.362  0.00  0.00     0.181 C 
+HETATM   14  C           1      -2.898   0.900  -1.362  0.00  0.00     0.043 C 
+BRANCH  13  15
+HETATM   15  C           1      -0.871   2.322  -1.362  0.00  0.00     0.196 C 
+HETATM   16  O           1       0.358   2.550  -1.362  0.00  0.00    -0.646 OA
+HETATM   17  O           1      -1.683   3.273  -1.362  0.00  0.00    -0.646 OA
+ENDBRANCH  13  15
+ENDBRANCH   3  13
+TORSDOF 6

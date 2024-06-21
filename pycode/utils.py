@@ -7,7 +7,9 @@ from urllib.parse import quote
 
 from rdkit import Chem
 from rdkit.Chem import SaltRemover
+
 import pandas as pd
+import matplotlib.pyplot as plt
 
 current_dir = os.getcwd()
 # 사용자 에이전트 헤더 추가
@@ -142,3 +144,17 @@ def process_log_files(log_dir):
     
     df = pd.DataFrame(data, columns=['INCI', 'Affinity'])
     return df
+
+
+def draw_hist(targets):
+    #targets : must be 2 row - list
+    #target[0] should be data, target[1] should be label
+    plt.figure(figsize=(10, 6))
+    for target in targets:
+        plt.hist(target[0], bins=20, edgecolor='k', alpha=0.7, label=target[1])
+    plt.title('Distribution of Affinity Values')
+    plt.xlabel('Affinity')
+    plt.ylabel('Counts')
+    plt.grid(True)
+    plt.legend()
+    plt.show()

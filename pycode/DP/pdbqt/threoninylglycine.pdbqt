@@ -1,0 +1,41 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK       I    between atoms: C_1  and  N_3 
+REMARK    1  A    between atoms: C_1  and  C_2 
+REMARK    2  A    between atoms: C_2  and  C_9 
+REMARK    3  A    between atoms: C_2  and  N_6 
+REMARK    4  A    between atoms: N_3  and  C_4 
+REMARK    5  A    between atoms: C_4  and  C_14 
+REMARK    6  A    between atoms: C_9  and  O_11 
+ROOT
+HETATM    1  C           1      -0.408   0.693  -0.258  0.00  0.00     0.302 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C           1       0.572  -0.454  -0.258  0.00  0.00     0.251 C 
+HETATM    3  N           1       0.115  -1.745  -0.258  0.00  0.00    -0.349 N 
+HETATM    4  H           1      -0.880  -1.929  -0.258  0.00  0.00     0.163 HD
+HETATM    5  O           1       1.759  -0.234  -0.258  0.00  0.00    -0.271 OA
+BRANCH   3   6
+HETATM    6  C           1       1.056  -2.847  -0.258  0.00  0.00     0.235 C 
+BRANCH   6   7
+HETATM    7  C           1       0.302  -4.154  -0.258  0.00  0.00     0.191 C 
+HETATM    8  O           1       0.927  -5.237  -0.258  0.00  0.00    -0.647 OA
+HETATM    9  O           1      -0.948  -4.154  -0.258  0.00  0.00    -0.647 OA
+ENDBRANCH   6   7
+ENDBRANCH   3   6
+ENDBRANCH   1   2
+BRANCH   1  10
+HETATM   10  C           1       0.353   2.012  -0.258  0.00  0.00     0.153 C 
+HETATM   11  C           1      -0.637   3.169  -0.257  0.00  0.00     0.042 C 
+BRANCH  10  12
+HETATM   12  O           1       1.159   2.087   0.886  0.00  0.00    -0.393 OA
+HETATM   13  H           1       1.611   2.913   0.849  0.00  0.00     0.210 HD
+ENDBRANCH  10  12
+ENDBRANCH   1  10
+BRANCH   1  14
+HETATM   14  N           1      -1.270   0.614   0.967  0.00  0.00    -0.064 N 
+HETATM   15  H           1      -1.949   1.408   0.968  0.00  0.00     0.275 HD
+HETATM   16  H           1      -1.793  -0.291   0.967  0.00  0.00     0.275 HD
+HETATM   17  H           1      -0.668   0.669   1.820  0.00  0.00     0.275 HD
+ENDBRANCH   1  14
+TORSDOF 6

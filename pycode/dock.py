@@ -70,7 +70,25 @@ def dock_ligand_flex(r_receptor, f_receptor, ligand, output):
        
     except subprocess.CalledProcessError as e:
         print(f"Error docking {ligand} to {f_receptor}: {e.stderr.decode('utf-8')}")
-        
+
+
+## directory docking (pdbqt -> dock)
+def dock_dir(receptor, pdbqt_dir, output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    cnt = 0
+
+    total_start = time.time()
+    for dirpath, dirnames, filenames in os.walk(pdbqt_dir):
+        for file in filenames:
+            if file.endswith('.pdbqt'):
+                cnt+=1
+                print(f'##########{cnt}##########{cnt}##########{cnt}##########')
+                start_time = time.time()
+                dock.dock_ligand(receptor, os.path.join(pdbqt_dir, file) , os.path.join(output_dir, f'docked_{file[:-6]}.pdbqt'))
+                end_time = time.time()
+                print(end_time - start_time)
+    total_end = time.time()
+    print(total_end - total_start)
 
 
 def main(receptor, name, output=None):
